@@ -37,9 +37,11 @@ For more information, see [Manage Role Groups](https://technet.microsoft.com/lib
 
 In on-premises Exchange deployments, users can be granted a variety of permissions to other users' mailboxes. This is called delegated mailbox permissions and it's useful when an administrative assistant needs to manage some part of another user's mailbox; for example, managing an executive's calendar. Exchange hybrid deployments support the use of some, but not all, mailbox permissions between mailboxes located in an on-premises Exchange organization and mailboxes located in Office 365. The following sections detail which permission are, and aren't, supported; additional configuration required to support hybrid mailbox permissions; and how mailbox permissions are synchronized between your on-premises organization and Office 365.
 
-### Mailbox permissions supported in hybrid environments
+### Mailbox permissions in hybrid environments
 
-The following permissions **are** supported:
+Not all Mailbox permissions are fully supported in an hybrid Exchange environment.
+
+#### Mailbox permissions supported in hybrid environments
 
 - **Full Access**: A mailbox on an on-premises Exchange server can be granted the **Full Access** permission to an Office 365 mailbox, and vice versa. For example, an Office 365 mailbox can be granted the **Full Access** permission to an on-premises shared mailbox. Users need to open the mailbox using the Outlook desktop client. Cross-premises mailbox permissions aren't fully supported in Outlook on the web. Users can use **Open another mailbox** in Outlook on the web to open other mailboxes where they have **Full Access** permission. However, this will generate a redirection link and credentials prompt before the user can access the mailbox.
 
@@ -64,7 +66,7 @@ The following permissions **are** supported:
 
      ![Delegate can see my private items setting in Outlook](media/Private_Item_Menu2.png)
 
-The following permissions or capabilities **aren't** supported:
+#### Mailbox Permissions NOT supported in hybrid environments
 
 - **Send As**: Lets a user send mail as though it appears to be coming from another user's mailbox. Send As permission does not synchronize automatically by Azure AD Connect between On-premises and Office 365. That's why at this point, cross Premises Send As permission is not supported. However, if you add the Send As permission manually in both environments, Send As will work in most of the scenarios.
 
