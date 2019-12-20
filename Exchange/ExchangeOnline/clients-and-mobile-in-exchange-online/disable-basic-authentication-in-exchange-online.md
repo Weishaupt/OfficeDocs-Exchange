@@ -104,7 +104,7 @@ You manage all aspects of authentication policies in Exchange Online PowerShell.
 |Exchange Active Sync (EAS)|Used by some email clients on mobile devices.|*AllowBasicAuthActiveSync*|
 |Autodiscover|Used by Outlook and EAS clients to find and connect to mailboxes in Exchange Online|*AllowBasicAuthAutodiscover*|
 |IMAP4|Used by IMAP email clients.|*AllowBasicAuthImap*|
-|MAPI over HTTP (MAPI/HTTP)|Used by Outlook 2013 and later.|*AllowBasicAuthMapi*|
+|MAPI over HTTP (MAPI/HTTP)|Used by Outlook 2010 and later.|*AllowBasicAuthMapi*|
 |Offline Address Book (OAB)|A copy of address list collections that are downloaded and used by Outlook.|*AllowBasicAuthOfflineAddressBook*|
 |Outlook Service|Used by the Mail and Calendar app for Windows 10.|*AllowBasicAuthOutlookService*|
 |POP3|Used by POP email clients.|*AllowBasicAuthPop*|
@@ -124,6 +124,7 @@ For email clients and apps that don't support modern authentication, you need to
 |Older ActiveSync clients|• Autodiscover <br/>• ActiveSync|
 |POP clients|• POP3 <br/>• Authenticated SMTP|
 |IMAP clients|• IMAP4 <br/>• Authenticated SMTP|
+|Outlook 2010|• Autodiscover <br/>• MAPI over HTTP<br/>• Offline Address Book<br/>• Outlook Anywhere (RPC over HTTP)<br/>• Exchange Web Services (EWS)|
 
 > [!NOTE]
 > Blocking Basic authentication will block app passwords in Exchange Online. For more information about app passwords, see [Create an app password for Office 365](https://support.office.com/article/3e7c860f-bda4-4441-a618-b53953ee1183.aspx).
